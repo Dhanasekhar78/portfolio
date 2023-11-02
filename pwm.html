@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#302D2B">
+  <title>Portofilo</title>
+  <link rel="website icon" href="mypic.png">
+
+
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>profile</title>
+  <style>
+       
+    .bg{
+   margin:100px auto;
+    width:80%;
+   background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("elc.png");
+   background-position: center;
+   background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    color:white;
+}
+
+</style>
+</head>
+
+<body class="home">
+  <!-- Start your project here-->
+  <nav class="navbar navbar-dark fixed-top  navbar-expand-lg home">
+    <a href="#" class="navbar-brand px-5 p-2">Port<span class="text-warning">folio</span></a>
+
+    <button class="navbar-toggler" data-mdb-toggle="collapse" data-mdb-target="#mynav">
+      <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="mynav">
+
+      <ul class="navbar-nav ms-auto px-5 ">
+
+        <li class="nav-item p-2">
+          <a href="index.html" class="nav-link">Go back to home</a>
+        </li>
+
+       </ul>
+
+    </div>
+  </nav>
+  <section class="container-lg  bg">
+    <h2>PULSE WIDTH MODULATION</h2>
+  
+
+</section>
+<section class="container text-center text-muted">
+    <p >Pulse width modulation (PWM) is one of the techniques through which one can transmit a message signal in the form of pulses. The pulses generated through this technique have different widths. These varying widths of pulses are used in switching electrical and electronic circuits.
+
+        PWM technique is used in many applications like Motor speed control, LED brightness control to vary voltage given to it. Most oftenly variable resistors can be used. The main problem with this control is power dissipation across the variable resistor. This problem can be avoided by using Pulse Width Modulation (PWM). In this method the average voltage delivered to the load is controlled by varying the duty cycle of the rectangular wave, that is how the width of pulses are varied by controlling the signal applied to it.
+    
+        In this project 555 timer IC is operated in monostable mode for generating PWM signal.
+    
+        </p>
+        <P class="text-muted font-weight-bold">* this porject is not published, done as a mini-project in college (N.B.K.R Institute of Science & Technology)</P>
+
+</section>
+
+<section class="container text-center">
+    <a class="btn btn-danger mt-5  mb-5 " href="index.html">Go back to Home</a>
+
+</section>
+
+<!-- Footer -->
+<footer class=" " id="contact">
+    <!-- Section: Social media -->
+    <section class="justify-content-center justify-content-lg-between p-4 border-bottom "
+      style="background-color: black; width:100%;">
+      <!-- Left -->
+      <div class="me-5 text-muted ms-5 "  >
+        <span>Get connect with me on linkedin by clicking on inkedin icon: </span>
+      </div>
+      <!-- Left -->
+      <!-- Right -->
+      <div class="text-center mt-4 text-warning">
+        <a href="https://www.linkedin.com/in/dhanasekharg/" class="me-4 mt-2 text-reset " target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: black; width:100%;">
+      © Developed by <span class="text-warning">Dhanasekhar</span>
+
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
+
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 100) { // Adjust the scroll threshold as needed
+          $(".navbar").addClass("scrolled-navbar");
+        } else {
+          $(".navbar").removeClass("scrolled-navbar");
+        }
+      });
+    });
+  </script>
+
+<script>
+$(document).ready(function () {
+  // Add an event listener to the menu items
+  $('.navbar-nav a').on('click', function () {
+    // Check if the menu is open (collapsed)
+    if ($('.navbar-toggler').is(':visible')) {
+      // Close the menu
+      $('.navbar-toggler').click();
+    }
+  });
+});
+</script>
+
+
+</body>
+
+</html>
