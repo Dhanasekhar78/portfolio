@@ -314,6 +314,18 @@
       });
     </script>
 
+<script>
+  $(document).ready(function () {
+    // Add an event listener to the menu items
+    $('.navbar-nav a').on('click', function () {
+      // Check if the menu is open (collapsed)
+      if ($('.navbar-toggler').is(':visible')) {
+        // Close the menu
+        $('.navbar-toggler').click();
+      }
+    });
+  });
+</script>
 
 
 
